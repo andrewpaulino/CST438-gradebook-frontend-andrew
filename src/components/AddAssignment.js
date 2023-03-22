@@ -84,8 +84,13 @@ const AddAssignment = () => {
         }
     }
 
+    const goBack = () => history.push('/')
+
     return (
-        <div style={{ display: 'flex', alignContent:'start',  flexDirection: 'column', padding: '60px'}}>
+        <div style={{ display: 'flex', alignContent: 'start', flexDirection: 'column', padding: '60px' }}>
+            <Button onClick={goBack} style={{ width: "200px", margin: "5px" }} variant="text" color="primary">
+                Back to gradebook
+            </Button>
             <h1 style={{ textAlign: 'left' }}>Add an Assignment</h1>
             <form>
                 <div style={{ display: 'flex'}}>
